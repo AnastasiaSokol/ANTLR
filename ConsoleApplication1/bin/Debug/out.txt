@@ -1,0 +1,50 @@
+﻿a11r  dw
+a11d  dw
+a22s  dw
+a00d  dw
+a11s  dw
+a11k  dw
+a11e  dw
+a11g  dw
+a11h  dw 
+
+RVALUE a11r
+RVALUE a11d
+RVALUE a22s
+RVALUE a00d
+LVALUE a00d
+PUSH 1
+:=
+LVALUE a11r
+RVALUE a11r
+PUSH 1
+add
+:=
+LABEL Condition
+RVALUE a11s
+RVALUE a11k
+or
+GOFALSE End_While
+LVALUE a11r
+RVALUE a11r
+:=
+GOTO Condition
+LABEL End_While
+RVALUE a11e
+RVALUE a11g
+or
+GOFALSE Else_or_EndIf
+LVALUE a11e
+RVALUE a11h
+:=
+LABEL Else_or_EndIf
+RVALUE a00d
+PUSH 1
+=
+GOFALSE END_CASE
+LVALUE a11s
+RVALUE a11s
+:=
+LABEL END_CASE
+HALT
+

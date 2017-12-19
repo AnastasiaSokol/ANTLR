@@ -1,0 +1,9 @@
+intege a11r;
+char a11d;
+float a22s;
+bool a00d;
+a00d=true;
+a11r:=(a11r+1);
+while (a11s||a11k){a11r=a11r+2;}
+if (a11e||a11g){a11e=a11h;}
+switch a00d{by 1:a11s=a11s*1;}
